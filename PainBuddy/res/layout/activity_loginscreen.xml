@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_screen_relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcome">
+       
+     <EditText
+        android:id="@+id/login_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_name"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:inputType="phone"
+        android:imeOptions="actionSend"
+        android:textAlignment="center"
+        />   
+
+    <ImageButton 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/login_button"
+		android:src="@drawable/login_button"
+		android:onClick="attemptLogin" 
+		android:layout_below="@id/login_edit"
+		android:layout_centerHorizontal="true"
+
+		android:scaleX="0.6"		
+		android:scaleY="0.6"			
+		/> 
+  
+     <!--<ImageView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/login_penguin"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:scaleX="0.5"
+		android:scaleY="0.5"	
+		/>-->
+	</RelativeLayout>
+	
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.painbuddy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <uses-permission 
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyAppTheme" >
+        <activity
+            android:name="com.example.painbuddy.Loginscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.Welcomescreen"
+            android:label="@string/title_activity_welcomescreen"
+            android:parentActivityName="com.example.painbuddy.Loginscreen" >
+            <intent-filter>
+                <action android:name="com.example.painbuddy.WELCOME_SCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.painbuddy" />
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.Cbt_training_Activity"
+            android:label="@string/title_activity_cbt_training_" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.Cbt_training"
+            android:label="@string/title_activity_cbt_training" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.CbtTools"
+            android:label="@string/title_activity_cbt_training_age" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.Cbt_welcome"
+            android:label="@string/title_activity_cbt_welcome" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.Cbt_mindfulness"
+            android:label="@string/title_activity_cbt_mindfulness" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.SetupScreen"
+            android:label="@string/title_activity_setup_screen"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.Statistics"
+            android:label="@string/title_activity_statistics" >
+        </activity>
+        <activity
+            android:name="com.example.painbuddy.DiaryWebView"
+            android:label="@string/title_activity_diary_web_view"
+            android:hardwareAccelerated="true" >
+        </activity>
+    </application>
+
+</manifest>
